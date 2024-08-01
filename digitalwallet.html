@@ -1,0 +1,181 @@
+<!-- Digital Wallet -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Bill Buddy</title>
+
+<!-- Styles --> 
+<style>
+    body {
+      background-color: #F6F4F3;
+    }
+
+    .navbar {
+      background-color: #F6F4F3; 
+      border-bottom: 2px solid #D1C8C1; /* Line below the navbar */
+    }
+
+    .navbar-brand {
+      color: #31241E;
+      font-size: 24px;
+    }
+
+    .navbar-brand:hover {
+      color: #bfa6a0; /* Darker color on hover */
+    }
+
+    .nav-link {
+      color: #31241E;
+      font-size: 20px;
+    }
+
+    .nav-link:hover {
+      color: #bfa6a0; /* Darker color on hover */
+    }
+
+    .btn-rounded {
+      border-radius: 25px; 
+    }
+
+    .btn-custom {
+      background-color: #D1C8C1; 
+      color: white;
+      border: none; 
+      padding: 8px 18px; 
+      font-size: 17px; 
+    }
+
+    .btn-custom:hover {
+      background-color: #bfa6a0; /* Slightly darker color on hover */
+    }
+
+    .card-container {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      flex-direction: column; /* Stack vertically */
+    }
+
+    .card {
+      border: none;
+      align-items: left;
+      justify-content: center;
+      width: 200px;     
+      height: 50px; 
+      background-color: #D1C8C1;
+      border-radius: 0px;
+      color: #31241E;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 20px; /* Space between image and card */
+    }
+
+    .add-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 160px; 
+      height: 160px; 
+      background-color: #D1C8C1;
+      border-radius: 50%; 
+      color: #31241E;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-left: 20px; /* Space between image and add card button */
+      text-align: center; /* Center the text inside */
+    }
+
+    .add-card:hover {
+      background-color: #E9E4E2;
+    }
+
+    .card-selection-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-weight: bold;
+    }
+
+    .card-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card-image img {
+      max-width: 350px; 
+      height: auto;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-sm bg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img src="logo.png" alt="Bill Buddy Logo" style="width:55px;">
+        Bill Buddy
+      </a>
+  
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/service.html">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-item ml-auto d-flex align-items-center">
+          <a href="/cart.html">
+            <img src="shoppingcart.png" alt="Shopping Cart" style="width:55px;">
+          </a>
+          <a href="/login.html" class="btn btn-custom btn-rounded ml-3">Login / Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Select a Card Title -->
+  <div class="card-selection-title">
+    <h2><strong>Select a card</strong></h2>
+  </div>
+
+<!-- Card Image and Selection Section -->
+  <div class="card-image-container">
+    <div class="card-image">
+      <img src="card.png" alt="Visa Card Image">
+    </div>
+    <a href="addcard.html" class="add-card text-decoration-none">
+      <div><strong>+ ADD A<br>
+        NEW CARD</strong></div>
+    </a>
+  </div>
+
+<!-- Visa Default card -->
+  <div class="card-container">
+    <div class="card">
+      <div><strong>VISA [DEFAULT] *9010</strong></div>
+    </div>
+  </div>
+
+<!-- Bootstrap JS and dependencies (optional) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

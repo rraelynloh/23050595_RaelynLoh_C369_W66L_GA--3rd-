@@ -1,0 +1,198 @@
+<!-- Mary Profile -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Bill Buddy</title>
+
+<!-- Styles -->
+  <style>
+
+    body {
+      background-color: #F6F4F3;
+    }
+
+    .navbar {
+      background-color: #F6F4F3; 
+      border-bottom: 2px solid #D1C8C1;
+    }
+
+    .navbar-brand {
+      color: #31241E;
+      font-size: 24px;
+    }
+
+    .navbar-brand:hover {
+      color: #bfa6a0;
+    }
+
+    .nav-link {
+      color: #31241E;
+      font-size: 20px;
+    }
+
+    .nav-link:hover {
+      color: #bfa6a0;
+    }
+
+    .btn-rounded {
+      border-radius: 25px; 
+    }
+
+    .btn-custom {
+      background-color: #D1C8C1; 
+      color: white;
+      border: none; 
+      padding: 8px 18px; 
+      font-size: 17px; 
+    }
+
+    .btn-custom:hover {
+      background-color: #bfa6a0;
+    }
+
+    .card {
+      background-color: #D1C8C1; /* Set the card background color */
+      border: none;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .card-body a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .card-body a:hover {
+      text-decoration: none;
+      color: #bfa6a0;
+    }
+    
+    .card-body {
+      color: #31241E; /* Set text color for better readability */
+    }
+
+    .card-img-top {
+      width: 100px; 
+      height: 100px; 
+      margin: 0 auto; 
+      margin-top: 20px;
+    }
+
+    .card-link {
+      display: block;
+      text-decoration: none;
+    }
+    
+    .card-link:hover .card {
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-sm bg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img src="logo.png" alt="Bill Buddy Logo" style="width:55px;">
+        Bill Buddy
+      </a>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/service.html">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-item ml-auto d-flex align-items-center">
+          <a href="/cart.html">
+            <img src="shoppingcart.png" alt="Shopping Cart" style="width:55px;">
+          </a>
+          <a href="/login.html" class="btn btn-custom btn-rounded ml-3">Login / Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Card Grid -->
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4">
+        <a href="/bill.html" class="card-link">
+          <div class="card">
+            <img src="bill.png" class="card-img-top" alt="Bill">
+            <div class="card-body text-center">
+              <h5 class="card-title">Bill</h5>
+              <p class="card-text">Manage and pay your bills easily</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="/insight.html" class="card-link">
+          <div class="card">
+            <img src="insight.png" class="card-img-top" alt="Insight">
+            <div class="card-body text-center">
+              <h5 class="card-title">Insight</h5>
+              <p class="card-text">Get insights on your spending habits</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="w-100"></div> <!-- Break the row for new layout -->
+      <div class="col-md-4 mb-4">
+        <a href="/digitalwallet.html" class="card-link">
+          <div class="card">
+            <img src="digitalwallet.png" class="card-img-top" alt="Digital Wallet">
+            <div class="card-body text-center">
+              <h5 class="card-title">Digital Wallet</h5>
+              <p class="card-text">Store and manage your digital currencies</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 mb-4">
+        <a href="/transaction.html" class="card-link">
+          <div class="card">
+            <img src="transaction.png" class="card-img-top" alt="Transaction">
+            <div class="card-body text-center">
+              <h5 class="card-title">Transaction</h5>
+              <p class="card-text">Track all your transactions in one place</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+<!-- Bootstrap JS and dependencies (optional) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
