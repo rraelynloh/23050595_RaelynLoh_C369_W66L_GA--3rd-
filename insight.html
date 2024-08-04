@@ -1,0 +1,276 @@
+<!-- Insight Page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Bill Buddy</title>
+
+<!-- Styles -->
+  <style>
+
+    body {
+      background-color: #F6F4F3;
+    }
+
+    .navbar {
+      background-color: #F6F4F3; 
+      border-bottom: 2px solid #D1C8C1; /* Line below the navbar */
+    }
+
+    .navbar-brand {
+      color: #31241E;
+      font-size: 24px;
+    }
+
+    .navbar-brand:hover {
+      color: #bfa6a0; /* Darker color on hover */
+    }
+
+    .nav-link {
+      color: #31241E;
+      font-size: 20px;
+    }
+
+    .nav-link:hover {
+      color: #bfa6a0; /* Darker color on hover */
+    }
+
+    .btn-login {
+      background-color: #D1C8C1; 
+      color: white;
+      border: none; 
+      padding: 8px 18px; 
+      font-size: 17px; 
+      border-radius: 25px; 
+    }
+
+    .btn-login:hover {
+      background-color: #bfa6a0; /* Slightly darker color on hover */
+    }
+
+    .btn-custom {
+      background-color: #F6F4F3; 
+      color: black;
+      border: none; 
+      padding: 8px 25px; 
+      font-size: 20px; 
+      border-radius: 0;
+    }
+
+    .btn-custom:hover {
+      background-color: #bfa6a0; /* Slightly darker color on hover */
+    }
+
+    .card {
+      background-color: #D1C8C1;
+    }
+ 
+    .card-big {
+      border: 1px solid #D1C8C1;
+      border-radius: 0;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+ 
+    .card-small-2 {
+      border: 1px solid #D1C8C1;
+      border-radius: 0;
+      height: 300px;
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column; /* Change to column layout for better centering */
+      align-items: center;
+      justify-content: center;
+      padding: 15px;
+    }
+
+    .card-small-3 {
+      border: 1px solid #D1C8C1;
+      height: 280px;
+      border-radius: 0;
+      width: 455px;
+      margin-left: 105px;
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center elements horizontally */
+      justify-content: center; /* Center elements vertically */
+      padding: 15px;
+    }
+
+    .card-small-4 {
+      border: 1px solid #D1C8C1;
+      height: 280px;
+      border-radius: 0;
+      width: 455px;
+      margin-right: 105px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center; /* Center items horizontally */
+      padding: 15px;
+    }
+
+    .card-body {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      text-align: left; /* Ensure text is centered */
+    }
+
+    .card-body-small-3, .card-body-small-4 {
+      display: flex;
+      flex-direction: column; /* Change layout for this specific card */
+      align-items: flex-start; /* Align items to the start */
+    }
+
+    .card-text {
+      font-size: 20px; 
+      color: black;
+    }
+
+    .card-small-4 img {
+      width: 250px; /* Fixed width to ensure proper alignment */
+    }
+
+    .center-image {
+      display: flex;
+      justify-content: center; /* Center image horizontally */
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+  <nav class="navbar navbar-expand-sm bg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img src="logo.png" alt="Bill Buddy Logo" style="width:55px;">
+        Bill Buddy
+      </a>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/service.html">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="nav-item ml-auto d-flex align-items-center">
+          <a href="/cart.html">
+            <img src="shoppingcart.png" alt="Shopping Cart" style="width:55px;">
+          </a>
+          <a href="/login.html" class="btn btn-login ml-3">Login / Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<!-- Card Grid -->
+  <div class="container mt-5">
+    <div class="row">
+
+<!-- 1st Card (Hello Mary) -->
+      <div class="col-md-12 mb-4">
+        <div class="card card-big">
+          <div class="card-body card-content">
+            <img src="image.png" alt="User Image" style="width:60px;">
+            <h4 class="card-title">Hello Mary, Good Afternoon!</h4>
+          </div>
+        </div>
+      </div>
+
+<!-- 2nd Card (Insights) -->
+      <div class="col-md-12 mb-4">
+        <div class="card card-small-2">
+          <div class="card-body">
+            <div class="insights-text">
+              <h4 class="card-title">Insights</h4>
+              <p class="card-text">June<br>$946.30</p>
+              <div class="card-footer-wrapper">
+                <p class="card-text">
+                  <img src="yellow.png" alt="Yellow" style="width:40px; margin-right:10px;">
+                  Rent - $500
+                </p>
+              </div>
+              <div class="card-footer-wrapper">
+                <p class="card-text">
+                  <img src="red.png" alt="Red" style="width:40px; margin-right:10px;">
+                  Water Bill - $289.90
+                </p>
+              </div>
+              <div class="card-footer-wrapper">
+                <p class="card-text">
+                  <img src="navy.png" alt="Navy" style="width:30px; margin-right:10px;">
+                  Electrical Bill - $156.40
+                </p>
+              </div>
+            </div>
+            <div class="chart-container">
+              <img src="chart.png" alt="Pie Chart" style="width:250px;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- 3rd Card (Upcoming Bills) -->
+      <div class="col-md-6 mb-4 d-flex justify-content-center">
+        <div class="card card-small-3">
+          <div class="card-body card-body-small-3">
+            <div class="card-footer-content">
+              <h4 class="card-title">Upcoming Bills</h4>
+              <h6>Next Month $680.01</h6>
+            </div>
+            <div class="card-footer-wrapper">
+              <p class="card-text">
+                <img src="rent.png" alt="Rent Icon" style="width:40px; margin-right:10px;">
+                Rent<br>
+                Due on July 2 - $500
+              </p>
+            </div>
+            <div class="card-footer-wrapper">
+              <p class="card-text">
+                <img src="spotify.png" alt="Spotify Icon" style="width:40px; margin-right:10px;">
+                Spotify Subscription<br>
+                Due on July 3 - $10.69
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-- 4th Card (Expenses) -->
+      <div class="col-md-6 mb-4 d-flex justify-content-center">
+        <div class="card card-small-4">
+          <div class="card-body card-body-small-4">
+            <h4 class="card-title">Expenses</h4>
+            <div class="card-content-3">
+              <h6>Last 4 months</h6>
+              <div id="bar-chart-container" class="center-image">
+                <img src="expenses.png" alt="Bar Chart">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Bootstrap JS and dependencies (optional) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

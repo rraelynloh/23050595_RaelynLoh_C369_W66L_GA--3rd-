@@ -1,3 +1,5 @@
+<!-- Bill Page -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,124 +8,137 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <title>Bill Buddy</title>
 
-  <!-- Styles --> 
-  <style>
-    body {
-      background-color: #F6F4F3;
-    }
+<!-- Styles --> 
+<style>
+  body {
+    background-color: #F6F4F3;
+  }
 
-    .navbar {
-      background-color: #F6F4F3; 
-      border-bottom: 2px solid #D1C8C1; /* Line below the navbar */
-    }
+  .navbar {
+    background-color: #F6F4F3; 
+    border-bottom: 2px solid #D1C8C1; /* Line below the navbar */
+  }
 
-    .navbar-brand {
-      color: #31241E;
-      font-size: 24px;
-    }
+  .navbar-brand {
+    color: #31241E;
+    font-size: 24px;
+  }
 
-    .navbar-brand:hover {
-      color: #bfa6a0; /* Darker color on hover */
-    }
+  .navbar-brand:hover {
+    color: #bfa6a0; /* Darker color on hover */
+  }
 
-    .nav-link {
-      color: #31241E;
-      font-size: 20px;
-    }
+  .nav-link {
+    color: #31241E;
+    font-size: 20px;
+  }
 
-    .nav-link:hover {
-      color: #bfa6a0; /* Darker color on hover */
-    }
+  .nav-link:hover {
+    color: #bfa6a0; /* Darker color on hover */
+  }
 
-    .btn-custom {
-      background-color: #F6F4F3; 
-      color: black;
-      border: none; 
-      padding: 8px 25px; 
-      font-size: 20px; 
-      border-radius: 0;
-    }
+  .btn-login {
+    background-color: #D1C8C1; 
+    color: white;
+    border: none; 
+    padding: 8px 18px; 
+    font-size: 17px; 
+    border-radius: 25px; 
+  }
 
-    .btn-custom:hover {
-      background-color: #bfa6a0; /* Slightly darker color on hover */
-    }
+  .btn-login:hover {
+    background-color: #bfa6a0; /* Slightly darker color on hover */
+  }
 
-    .card {
-      background-color: #D1C8C1;
-    }
+  .btn-custom {
+    background-color: #F6F4F3; 
+    color: black;
+    border: none; 
+    padding: 8px 25px; 
+    font-size: 20px; 
+    border-radius: 0;
+  }
 
-    .card-small {
-      border: 1px solid #D1C8C1;
-      border-radius: 0;
-      height: 450px; /* Adjust the height as needed */
-      max-width: 900px;
-      margin: 0 auto;
-    }
+  .btn-custom:hover {
+    background-color: #bfa6a0; /* Slightly darker color on hover */
+  }
 
-    .card-big {
-      border: 1px solid #D1C8C1;
-      border-radius: 0;
-      max-width: 900px;
-      margin: 0 auto;
-    }
+  .card {
+    background-color: #D1C8C1;
+  }
 
-    .card-img-top {
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-    }
+  .card-small {
+    border: 1px solid #D1C8C1;
+    border-radius: 0;
+    height: 450px; /* Adjust the height as needed */
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
-    .card-content {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      text-align: center;
-    }
+  .card-big {
+    border: 1px solid #D1C8C1;
+    border-radius: 0;
+    max-width: 900px;
+    margin: 0 auto;
+  }
 
-    .card-content img {
-      margin-right: 15px;
-    }
+  .card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
 
-    .card-footer-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+  .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+  }
 
-    .card-text {
-      font-size: 23px; 
-      color: black;
-    }
+  .card-content img {
+    margin-right: 15px;
+  }
 
-    .card-footer-wrapper {
-      display: flex;
-      justify-content: space-between; /* Distributes space between the text and the centered content */
-      align-items: center;
-    }
+  .card-footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    .card-footer-details {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end; /* Align items to the right */
-      font-size: 24px;
-    }
+  .card-text {
+    font-size: 21px; 
+    color: black;
+  }
 
-    .card-footer-details .amount {
-      margin-right: 20px;
-      display: flex;
-      align-items: center;
-    }
+  .card-footer-wrapper {
+    display: flex;
+    justify-content: space-between; /* Distributes space between the text and the centered content */
+    align-items: center;
+  }
 
-    .card-footer-details .pay {
-      display: flex;
-      align-items: center;
-    }
+  .card-footer-details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align items to the right */
+    font-size: 21px;
+  }
 
-  </style>
+  .card-footer-details .amount {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .card-footer-details .pay {
+    display: flex;
+    align-items: center;
+  }
+
+</style>
 </head>
 
 <body>
-  <!-- Navbar -->
+<!-- Navbar -->
   <nav class="navbar navbar-expand-sm bg custom-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html">
@@ -149,13 +164,13 @@
           <a href="/cart.html">
             <img src="shoppingcart.png" alt="Shopping Cart" style="width:55px;">
           </a>
-          <a href="/login.html" class="btn btn-custom btn-rounded ml-3">Login / Sign Up</a>
+          <a href="/login.html" class="btn btn-login ml-3">Login / Sign Up</a>
         </div>
       </div>
     </div>
   </nav>
 
-  <!-- Card Grids -->
+<!-- Card Grids -->
   <div class="container mt-5">
     <div class="row">
       <!-- 1st Card -->
@@ -168,7 +183,7 @@
         </div>
       </div>
 
-      <!-- 2nd Card -->
+<!-- 2nd Card -->
       <div class="col-md-12 mb-4">
         <div class="card card-small">
           <div class="card-body">
@@ -190,7 +205,7 @@
             </div>
             <div class="card-footer-wrapper">
               <p class="card-text">
-                <img src="ocbc.png" alt="OCBC Logo" style="width:70px; margin-right:10px;">
+                <img src="ocbc.png" alt="OCBC Logo" style="width:80px; margin-right:10px;">
                 Credit Card<br> 
                 Due on June 14
               </p>
@@ -205,7 +220,7 @@
             </div>
             <div class="card-footer-wrapper">
               <p class="card-text">
-                <img src="netflix.png" alt="Netflix Logo" style="width:70px; margin-right:10px;">
+                <img src="netflix.png" alt="Netflix Logo" style="width:80px; margin-right:10px;">
                 Netflix Subscription<br> 
                 Due on June 15
               </p>
@@ -220,7 +235,7 @@
             </div>
             <div class="card-footer-wrapper">
               <p class="card-text">
-                <img src="singtel.png" alt="Singtel Logo" style="width:70px; margin-right:10px;">
+                <img src="singtel.png" alt="Singtel Logo" style="width:72px; margin-right:10px;">
                 Phone Bill<br> 
                 Due on June 16
               </p>
@@ -240,8 +255,7 @@
     </div>
   </div>
 
+<!-- Bootstrap JS and dependencies (optional) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.

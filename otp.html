@@ -1,4 +1,4 @@
-<!-- Add card Page-->
+<!-- One Time Password Page -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,9 +8,9 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <title>Bill Buddy</title>
 
-<!-- Styles -->
+  <!-- Styles -->
   <style>
-
+    
     body {
       background-color: #F6F4F3;
     }
@@ -54,83 +54,61 @@
       background-color: #bfa6a0; /* Slightly darker color on hover */
     }
 
-    .card-grid-container {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 100px; /* Space between the cards */
-      padding: 20px;
+    .container {
       margin-top: 50px;
     }
 
-    .card {
-      border: none;
-      border-radius: 0px;
-      background-color: #D1C8C1;
-      color: #31241E;
+    .otp-box {
+      background-color: white;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       text-align: center;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      padding: 10px;
     }
 
-    .card-add {
-      width: 130px;
-      height: 50px;
+    .otp-box h2 {
+      margin-bottom: 20px;
     }
 
-    .details-card {
-      width: 600px;
-      height: 350px;
-      padding: 20px;
-      background-color: #d1c8c1;
+    .otp-box p {
+      font-size: 16px;
       color: #31241E;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+      margin-bottom: 20px;
     }
 
-    .details-card-left {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      align-items: flex-start; /* Ensure alignment to the left */
+    .otp-input {
+      padding: 10px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #D1C8C1;
     }
-
-    .details-card-row {
-      display: flex;
-      align-items: center;
-    }
-
-    .details-card-left-col,
-    .details-card-right-col {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      text-align: left; /* Align labels to the left */
-    }
-
-    .details-card-left-col {
-      width: 350px; /* Adjust width as needed for alignment */
-    }
-
-    .details-card-right-col {
-      width: 250px; /* Adjust width for security code */
-    }
-
-    .details-card input {
+    
+    .btn-submit {
+      background-color: #D1C8C1;
+      color: white;
       border: none;
-      padding: 8px;
-      border-radius: 4px;
+      padding: 8px 25px;
+      font-size: 17px;
+      border-radius: 25px;
+      display: block;
+      margin: 1px auto;
+      margin-bottom: 20px;
     }
 
-    .details-card input.long-input {
-      width: 350px; /* Adjust as needed for longer input */
+    .btn-submit:hover {
+      background-color: #bfa6a0;
     }
 
-    .details-card input.short-input {
-      width: 180px; /* Default width for short inputs */
+    .container a {
+        color: #007bff;
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+    }
+
+    .container a:hover {
+        text-decoration: underline;
     }
     
   </style>
@@ -171,37 +149,35 @@
     </div>
   </nav>
 
-<!-- Add Card -->
-  <div class="container">
-    <div class="card-grid-container">
-      <!-- Add Card -->
-      <a href="digitalwallet.html" class="text-decoration-none">
-        <div class="card card-add">
-          <div><strong>+ ADD CARD</strong></div>
-        </div>
-      </a>
-
-<!-- Details Card -->
-      <div class="card details-card">
-        <div class="details-card-left">
-          <div><strong>CARD HOLDER NAME</strong></div>
-          <input type="text" placeholder="" class="long-input">
-          <div><strong>CARD NUMBER</strong></div>
-          <input type="text" placeholder="" class="long-input">
-        </div>
-        <div class="details-card-row">
-          <div class="details-card-left-col">
-            <div><strong>EXPIRY DATE</strong></div>
-            <input type="text" placeholder="MM / YY" class="short-input">
-          </div>
-          <div class="details-card-right-col">
-            <div><strong>SECURITY CODE</strong></div>
-            <input type="text" placeholder="CVV" class="short-input">
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- OTP Verification Box -->
+<div class="container">
+  <div class="otp-box mx-auto col-md-6">
+    <h2>One-Time Password (MFA)</h2>
+    <p>Enter the OTP code we sent to +65 **** 1234</p>
+    <form id="otpForm">
+      <input type="text" id="otpInput" class="otp-input" placeholder="Enter OTP">
+      <input type="hidden" id="amount" value="123.45"> <!-- Example amount, replace with actual value if needed -->
+      <button type="submit" class="btn-submit">Submit</button>
+      <p>Didn't receive the OTP? <a href="otp.html">Resend</a></p>
+    </form>
   </div>
+</div>
+
+<!-- JavaScript -->
+  <script>
+    function validateOTP(event) {
+      event.preventDefault();
+
+      // Validate OTP (this is a placeholder, implement your own logic)
+      alert('OTP validated successfully!');
+
+      // After validation, redirect to confirmation page
+      window.location.href = 'confirmation.html';
+    }
+
+    // Attach event listener to form submit
+    document.getElementById('otpForm').addEventListener('submit', validateOTP);
+  </script>
 
 <!-- Bootstrap JS and dependencies (optional) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

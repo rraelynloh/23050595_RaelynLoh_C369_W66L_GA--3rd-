@@ -1,4 +1,4 @@
-<!-- About Page -->
+<!-- Payment Confirmation Page -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,9 +8,9 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <title>Bill Buddy</title>
 
-<!-- Styles --> 
-<style>
-  
+<!-- Styles -->
+  <style>
+    
     body {
       background-color: #F6F4F3;
     }
@@ -54,34 +54,34 @@
       background-color: #bfa6a0; /* Slightly darker color on hover */
     }
 
-    .about-container {
-      display: flex;
-      align-items: flex-start; /* Align items to the top */
-      padding: 20px;
-      background-color: #F6F4F3; /* Background color for about section */
+    .confirmation-section {
+      text-align: center;
+      margin-top: 50px;
     }
 
-    .about-image {
-      margin-right: 20px; /* Space between image and text */
+    .confirmation-section img {
+      max-width: 200px; 
+      height: auto;
     }
 
-    .feature-list {
-      list-style-type: disc; 
-      padding-left: 20px; 
+    .confirmation-section h2 {
+      margin-top: 15px;
+      color: #31241E;
     }
 
-    .btn-try-now {
-      padding: 5px 25px; 
-      font-size: 20px; 
+    .confirmation-section p {
+      font-size: 17px;
+      margin-top: 10px;
+      color: #31241E;
     }
 
-</style>
+  </style>
 </head>
 
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-sm bg custom-navbar">
+  <nav class="navbar navbar-expand-sm bg custom-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html">
         <img src="logo.png" alt="Bill Buddy Logo" style="width:55px;">
@@ -113,37 +113,12 @@
     </div>
   </nav>
 
-<!-- About Section -->
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-8 about-container">
-      <img src="about.png" alt="About Image" class="about-image" style="width:430px;" height="530px">
-      <div class="about-content">
-        <h2>Bill Buddy</h2>
-        <p>From electricity and water bills to phone and credit card payments, missing due dates can result in avoidable late fees and financial strain.</p>
-        <p>Bill Buddy can help you:</p>
-        <ul class="feature-list">
-          <li>Consolidate bill payments.</li>
-          <li>Track bills and send reminders.</li>
-          <li>Show monthly summary of bills.</li>
-          <li>Show upcoming bills.</li>
-        </ul>
-        <p>Bill Buddy uses:</p>
-        <ul class="feature-list">
-          <li>Blockchain Technology</li>
-          <p>All transactions are recorded on ledger.</p>
-          <li>AI-Powered Fraud Detection.</li>
-          <p>Real-time alerts.<br>
-            Monitors every transaction.<br>
-            Enable Multi-Factor Authentication.</p>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<!-- Try Now Button -->
-<div class="container text-right my-4">
-    <a href="/service.html" class="btn btn-custom btn-rounded btn-try-now">Try Now</a>
+<!-- Confirmation Section -->
+  <div class="confirmation-section">
+    <img src="confirmation.png" alt="Confirmation">
+    <h2>Payment Complete</h2>
+    <p>Your bill payment has been successful. <br>
+    A confirmation email has been sent to ****Jane@outlook.com</p>
   </div>
 
 <!-- Bootstrap JS and dependencies (optional) -->
@@ -152,4 +127,3 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
